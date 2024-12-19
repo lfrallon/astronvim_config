@@ -1,4 +1,3 @@
-
 -- Customize Treesitter
 
 ---@type LazySpec
@@ -8,6 +7,11 @@ return {
     ensure_installed = {
       "lua",
       "vim",
+      "java",
+      "javascript",
+      "typescript",
+      "graphql",
+      "groovy",
       -- add more arguments for adding more treesitter parsers
     },
   },

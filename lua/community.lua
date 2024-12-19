@@ -11,5 +11,6 @@ return {
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.utility.hover-nvim" },
   { import = "astrocommunity.recipes.vscode-icons" },
+  -- { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
   -- { import = "astrocommunity.media.image-nvim" }, -- Failed to build in Fedora
 }

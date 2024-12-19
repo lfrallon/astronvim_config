@@ -1,4 +1,4 @@
-require("lazy").setup({
+local plugins = {
   {
     "AstroNvim/AstroNvim",
     version = "^4", -- Remove version tracking to elect for nightly AstroNvim
@@ -11,9 +11,16 @@ require("lazy").setup({
       update_notifications = true, -- Enable/disable notification about running `:Lazy update` twice to update pinned plugins
     },
   },
+  {
+    "thePrimeagen/vim-be-good",
+    cmd = "VimBeGood",
+    -- config = function() require("VimBeGood").setup {} end,
+  },
   { import = "community" },
   { import = "plugins" },
-} --[[@as LazySpec]], {
+}
+
+local opts = {
   -- Configure any other `lazy.nvim` configuration options here
   install = { colorscheme = { "astrotheme", "habamax" } },
   ui = { backdrop = 100 },
@@ -29,4 +36,6 @@ require("lazy").setup({
       },
     },
   },
-} --[[@as LazyConfig]])
+}
+
+require("lazy").setup(plugins, opts)
